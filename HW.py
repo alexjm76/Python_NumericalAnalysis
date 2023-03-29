@@ -12,7 +12,7 @@ r=0
 l=12
 u=16
 while True:
-    r = (l + u) / 2
+    r = u - ((calc_f(u)*(u-l))/(calc_f(u)-calc_f(l)))
     if calc_f(l)*calc_f(r) < 0:
         u = r
     elif calc_f(l)*calc_f(r) >0:
